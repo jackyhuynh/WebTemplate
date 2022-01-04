@@ -1,7 +1,7 @@
 # Template for Web App with Authentication
 
 ## Introduction
-Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
+Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/). Implemented by Truc Huynh.
 
 ## Structure:
 ```code
