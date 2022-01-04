@@ -3,6 +3,14 @@
 ## Introduction
 Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
 
+## Structure:
+
+```code
+# Level 2 : Hasing
+# Level 1 : Encryption (Password + Key) -> Cipher methods
+# Level 0 : Server
+
+```
 ## Technology
 List of technology
 - Python 
