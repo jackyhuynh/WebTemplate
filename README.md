@@ -1,12 +1,12 @@
-# TEMPLATE for PYTHON Developer using PYCHARM
+# Template for Web Authentication
 
 ## Introduction
-Industry template for authentication with login, register, validation and the secrect(home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
+Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
 
 ## Technology
 List of technology
 - Python 
-- Object Oriented Design
+- Web App
 - PyCharm IDE
 
 ## Getting Started
