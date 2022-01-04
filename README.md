@@ -4,13 +4,18 @@
 Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
 
 ## Structure:
-
 ```code
-# | Level 2 : Hasing
-# | Level 1 : Encryption (Password + Key) -> Cipher methods
-# | Level 0 : Server
+# | Level 1 : Server
+# | Level 2 : Encryption (Password + Key) -> Cipher methods -> Ciphertext
+# | Level 3 : Hasing (Password) -> HashFunction -> Hash
+# | Level 4 : Salting (password + random_unique_salt) -> HashFunction -> Hash
 
 ```
+
+## How password is hack:
+- Compare the hash value with the hash table (self create)
+- Day 68 on [100 days of code](https://www.udemy.com/course/100-days-of-code)
+
 ## Technology
 List of technology
 - Python 
