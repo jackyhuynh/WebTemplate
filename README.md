@@ -1,13 +1,7 @@
 # TEMPLATE for PYTHON Developer using PYCHARM
 
 ## Introduction
- Simply introduce the project that specically built with PyCharm. 
-I believe the simplier the Readme file, the easier to read
-- You can also keep this private and organize this GitHub as a private libary for yourself.
-<img src="https://github.com/jackyhuynh/template-git-jupiter-notebook-md/blob/main/images/instruction.JPG">
-
-## Documents/Research Paper
-Link your research paper <a href="https://github.com/jackyhuynh/template-git-jupiter-notebook-md/blob/main/documents/resarch-sample.pdf">here</a> if you need
+Industry template for authentication with login, register, validation and the secrect(home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
 
 ## Technology
 List of technology
