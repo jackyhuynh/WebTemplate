@@ -1,20 +1,19 @@
-# Template for Web App with Authentication
+# Template for Web Authentication
 
 ## Introduction
-Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/). Implemented by Truc Huynh.
+Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
 
 ## Structure:
 ```code
 # | Level 1 : Server
 # | Level 2 : Encryption (Password + Key) -> Cipher methods -> Ciphertext
 # | Level 3 : Hasing (Password) -> HashFunction -> Hash
-# | Level 4 : Salting (password + random_unique_salt) -> HashFunction -> Hash
-
+# | Level 4 : Salting (password + random_unique_salt) -> HashFunction -> Hash -> salt_round( x Round) x times -> New_Hash
 ```
 
 ## How password is hack:
 - Compare the hash value with the hash table (self create)
-- Day 68 on [100 days of code](https://www.udemy.com/course/100-days-of-code)
+- Hacking 101: Day 68 on [100 days of code](https://www.udemy.com/course/100-days-of-code)
 
 ## Technology
 List of technology
@@ -67,4 +66,4 @@ my README.md format was retrieved from
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-* Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
+* Any acknowledgments go here
