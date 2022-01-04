@@ -10,6 +10,14 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
+login_manager = LoginManager()
+login_manager.init_app(app)
+
+
+@login_manager.user_loader
+def load_user(user_id):
+    return User.query.get(int(user_id))
+
 
 ##CREATE TABLE IN DB
 class User(UserMixin, db.Model):
@@ -30,32 +38,68 @@ def home():
 @app.route('/register', methods=["GET", "POST"])
 def register():
     if request.method == "POST":
+        if User.query.filter_by(email=request.form.get('email')).first():
+            # User already exists
+            flash("You've already signed up with that email, log in instead!")
+            return redirect(url_for('login'))
+
+        # Change the methods and salt_length if you wish to generate your own hashing
+        hash_and_salted_password = generate_password_hash(
+            request.form.get('password'),
+            method='pbkdf2:sha256',
+            salt_length=8
+        )
         new_user = User(
             email=request.form.get('email'),
             name=request.form.get('name'),
-            password=request.form.get('password')
+            password=hash_and_salted_password
         )
         db.session.add(new_user)
         db.session.commit()
-        return render_template("secrets.html", user=new_user)
-    return render_template("register.html")
+
+        # Log in and authenticate user after adding details to database.
+        login_user(new_user)
+
+        return redirect(url_for('secrets'))
+    return render_template("register.html", logged_in=current_user.is_authenticated)
 
 
 @app.route('/login', methods=["GET", "POST"])
 def login():
     if request.method == "POST":
-        pass
-    return render_template("login.html")
+        email = request.form.get('email')
+        password = request.form.get('password')
+
+        # Find user by email entered
+        user = User.query.filter_by(email=email).first()
+
+        # Email does not exit
+        if not user:
+            flash("That email doesn't exit please try another email!")
+            return redirect(url_for('login'))
+        # Wrong password
+        elif not check_password_hash(user.password, password):
+            flash("Password is not correct, please again!")
+            return redirect(url_for('login'))
+
+        else:
+            login_user(user)
+            return redirect(url_for('secrets'))
+
+    return render_template("login.html", logged_in=current_user.is_authenticated)
 
 
 @app.route('/secrets')
+@login_required
 def secrets():
-    return render_template("secrets.html")
+    print(current_user.name)
+    return render_template("secrets.html", name=current_user.name, logged_in=True)
 
 
 @app.route('/logout')
 def logout():
-    pass
+    logout_user()
+    return redirect(url_for('home'))
 
 
 @app.route('/download')
