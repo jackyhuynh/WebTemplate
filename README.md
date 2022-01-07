@@ -19,8 +19,21 @@
 #### Diagram:
 <img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/diagram.JPG">
 
-##### Home Page:
-- The home page allow user to login or enter your password
+#### Index Page:
+- The home page allow user to login or register for a new user
+<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/index.JPG">
+
+#### Login Page:
+- Login page allow user login the Home page.
+<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/login.JPG">
+
+#### Register Page:
+- Register page allow user register for a new account and login the Home Page.
+<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/register.JPG">
+
+#### Home Page:
+- Home page is where you store the information that you want to hide.
+<img src="<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/home.JPG">">
 
 ## How password is hack:
 - Compare the hash value with the hash table (self create)
