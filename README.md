@@ -35,9 +35,6 @@
 - Home page is where you store the information that you want to hide.
 <img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/home.JPG">
 
-## How password is hack:
-- Compare the hash value with the hash table (self create)
-- Hacking 101: Day 68 on [100 days of code](https://www.udemy.com/course/100-days-of-code)
 
 ## Technology
 List of technology
@@ -90,4 +87,4 @@ my README.md format was retrieved from
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
-* Any acknowledgments go here
+* Hacking 101: Day 68 on [100 days of code](https://www.udemy.com/course/100-days-of-code) of Dr.Angela
