@@ -1,4 +1,4 @@
-# Template for Web Authentication
+# Template for Web App with Authentication
 
 ## Introduction
 - Industry template for authentication with login, register, validation and the secrect (home) page. 
