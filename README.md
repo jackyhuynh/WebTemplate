@@ -1,4 +1,4 @@
-# Template for Web App with Authentication
+# Template for Web Authentication
 
 ## Introduction
 - Industry template for authentication with login, register, validation and the secrect (home) page. 
@@ -33,7 +33,7 @@
 
 #### Home Page:
 - Home page is where you store the information that you want to hide.
-<img src="<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/home.JPG">">
+<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/home.JPG">
 
 ## How password is hack:
 - Compare the hash value with the hash table (self create)
