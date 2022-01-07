@@ -1,15 +1,26 @@
 # Template for Web Authentication
 
 ## Introduction
-Industry template for authentication with login, register, validation and the secrect (home) page. Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
+- Industry template for authentication with login, register, validation and the secrect (home) page. 
+- Project is designed by Dr.Angela from [100 days of code](https://100daysofpython.dev/)
+- Please note this is a single page login (which is all the user share the same resources)
+- Take a look at [User-Banking-and-Expense-Analyst](https://github.com/jackyhuynh/User_Banking_and_Expense_Analyst) for multiple user with multiple database structure
 
-## Structure:
+### Encryption Level
 ```code
 # | Level 1 : Server
 # | Level 2 : Encryption (Password + Key) -> Cipher methods -> Ciphertext
 # | Level 3 : Hasing (Password) -> HashFunction -> Hash
 # | Level 4 : Salting (password + random_unique_salt) -> HashFunction -> Hash -> salt_round( x Round) x times -> New_Hash
 ```
+
+## Structure:
+
+#### Diagram:
+<img src="https://github.com/jackyhuynh/web_app_with_authentication_template/blob/main/images/diagram.JPG">
+
+##### Home Page:
+- The home page allow user to login or enter your password
 
 ## How password is hack:
 - Compare the hash value with the hash table (self create)
@@ -29,7 +40,7 @@ What things you need to install the software and how to install them
 - PyCharm Community IDE: Be More Productive: Save time while PyCharm takes care of the routine. Focus on the bigger things and embrace the keyboard-centric approach to get the most of PyCharm's many productivity features. Get Smart Assistance: PyCharm knows everything about your code. Rely on it for intelligent code completion, on-the-fly error checking and quick-fixes, easy project navigation, and much more.
 - PLease download all the necessary packages before run the application. If you use PyCharm, it will take care of your missing package or
 ```
-pip install all-missing-package(replace this with the package you intend to install)
+pip install missing-package
 ```
 
 ### Installing
