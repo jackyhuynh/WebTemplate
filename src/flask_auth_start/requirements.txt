@@ -3,7 +3,7 @@ dominate==2.5.2
 Flask==1.1.4
 Flask-Bootstrap==3.3.7.1
 Flask-Login==0.6.3
-Flask-SQLAlchemy==2.4.4
+Flask-SQLAlchemy==2.5.1
 Flask-WTF==0.14.3
 itsdangerous==1.1.0
 Jinja2==2.11.3
